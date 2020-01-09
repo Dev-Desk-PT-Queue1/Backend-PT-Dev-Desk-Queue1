@@ -1,29 +1,31 @@
 # Backend-UI-Landing-Page-PT-Dev-Desk-Queue1--Dev-Desk-PT-Queue1
 
-Ticket Routes
-
-Method	    Endpoint	            Description
-GET	        /tickets	            Returns all tickets
-GET	        /tickets/:id	        Returns ticket by id
-GET	        /tickets/user/:id	    Returns tickets assigned to user
-POST	    /tickets	            Creates a new ticket
-PUT	        /tickets/:id	        Updates ticket by id
-DELETE	    /tickets/:id	        Deletes ticket by id
-
-
-
-Authentication Routes
-
-Method	    Endpoint	            Description
-GET	        /users	                Returns all users
-GET	        /users/:id	            Returns user by id
-POST	    /register	            Registers a new user
-POST	    /login	                Log in for existing user
+## Ticket Routes 	            
+	    	        
+| Method  |  Endpoint | Description |
+|---|---|---|---|---|
+| GET  |  /tickets | Returns all tickets |   
+| GET |  /tickets/:id | Returns ticket by id |   
+| GET  | /tickets/user/:id | Returns tickets assigned to user |  
+| POST  | /tickets | Creates a new ticket | 
+| PUT | /tickets/:id  | Updates ticket by id |   
+| DELETE | /tickets/:id | Deletes ticket by id |  
 
 
+## Authentication Routes
 
-Users Table
- {
+
+| Method  |  Endpoint | Description |
+|---|---|---|---|---|
+| GET | /users |  Returns all users  | 
+| GET | /users/:id |  Returns user by id | 
+| POST | /register |  Registers a new user | 
+| POST | /login |  Log in for existing user | 
+
+
+## Users Table
+```
+{
      id: integer // Autoincrement by database
      username: String // unique, 50 chars max
      password: String 
@@ -31,8 +33,10 @@ Users Table
      lastName: String
      email: String // uniquie     
  }
+```
 
-Sample Add user Data
+## Sample Add user Data
+```
  {
 	"username": "bobsmith",
 	"password": "Frontend",
@@ -40,4 +44,19 @@ Sample Add user Data
 	"lastName": "Smith",
 	"email": "bob@smith.com"
 }
+```
+
+## Tickets Table
+```
+{
+    "title": String 255 char max
+    "description": String 255 char max
+    "category": String 255 char max
+    "resolved": boolean
+    "assigned": boolean
+    "assigned_user": integer Default 0
+    "created_at": String 255 Database created timestamp
+    "user_id": integer User that created ticket
+}
+```
 
