@@ -24,6 +24,7 @@
 
 
 ## Users Table
+
 ```
 {
      id: integer // Autoincrement by database
@@ -57,6 +58,7 @@
     "assigned_user": integer Default 0
     "created_at": String 255 Database created timestamp
     "user_id": integer User that created ticket
+    "tried": String
 }
 ```
 
