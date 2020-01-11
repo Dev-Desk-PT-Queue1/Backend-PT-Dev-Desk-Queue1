@@ -10,7 +10,7 @@ const { authenticate } = require('../middleware/middleware');
 
 router.use(express.json());
 
-router.get('/tickets', authenticate, async (req, res) => {
+router.get('/tickets', async (req, res) => {
     const tickets = await Tickets.getAllTickets();  
     res.status(200).json(tickets);
 });
