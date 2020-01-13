@@ -16,7 +16,7 @@ server.use('/api/', authRouter);
 server.use('/api/', ticketsRouter)
 
 server.get('/', (req, res) => {
-    res.status(418).json({ message: 'Backend-PT-Dev-Desk-Queue1' });
+    res.status(200).json({ message: 'Backend-PT-Dev-Desk-Queue1' });
 });
 
 module.exports = server;

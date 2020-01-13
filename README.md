@@ -1,26 +1,32 @@
 # Backend-UI-Landing-Page-PT-Dev-Desk-Queue1--Dev-Desk-PT-Queue1
 
+### Heroku
+
+https://dev-desk-queue.herokuapp.com/
+
+
 ## Ticket Routes 	            
 	    	        
-| Method  |  Endpoint | Description |
-|---|---|---|---|---|
-| GET  |  /tickets | Returns all tickets |   
-| GET |  /tickets/:id | Returns ticket by id |   
-| GET  | /tickets/user/:id | Returns tickets assigned to user |  
-| POST  | /tickets | Creates a new ticket | 
-| PUT | /tickets/:id  | Updates ticket by id |   
-| DELETE | /tickets/:id | Deletes ticket by id |  
+
+| Method | Endpoint            | Description                        |
+| -------| ------------------- | ---------------------------------- |
+| GET    | /tickets            | Returns all tickets                |
+| GET    | /tickets/:id        | Returns ticket by id               |
+| GET    | /tickets/user/:id   | Returns tickets assigned to user   |
+| POST   | /tickets            | Creates a new ticket               |
+| PUT    | /tickets/:id        | Updates ticket by id               |
+| DELETE | /tickets/:id        | Deletes ticket by id               |
 
 
 ## Authentication Routes
 
 
-| Method  |  Endpoint | Description |
-|---|---|---|---|---|
-| GET | /users |  Returns all users  | 
-| GET | /users/:id |  Returns user by id | 
-| POST | /register |  Registers a new user | 
-| POST | /login |  Log in for existing user | 
+| Method  |  Endpoint | Description               |
+| ------- | --------- | ------------------------- |
+| GET     | /users    |  Returns all users        | 
+| GET     | /users/:id|  Returns user by id       | 
+| POST    | /register |  Registers a new user     | 
+| POST    | /login    |  Log in for existing user | 
 
 
 ## Users Table
@@ -61,4 +67,5 @@
     "tried": String
 }
 ```
+
 
