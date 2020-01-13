@@ -68,4 +68,16 @@ https://dev-desk-queue.herokuapp.com/
 }
 ```
 
+## Sample Add Ticket
+```
+{
+    "title": "Broken Some More stuff",
+    "description": "Lots of Error messages",
+    "category": "React",
+    "resolved": "0",
+    "assigned": "0",
+    "assigned_user": "0" ,    
+    "tried": "Hit with hammer"
+}
+```
 
