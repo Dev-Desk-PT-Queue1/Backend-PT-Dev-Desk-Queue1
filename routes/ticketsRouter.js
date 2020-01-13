@@ -40,7 +40,7 @@ router.get('/tickets/user/:id', authenticate, async (req, res) => {
     }
 });
   
-router.post('/tickets', authenticate, async (req, res) => {
+router.post('/tickets', async (req, res) => {
     const { title, description, category, user_id } = req.body;  
     if(title || description || category || user_id){
       const ticket = await Tickets.createTicket(req.body);
